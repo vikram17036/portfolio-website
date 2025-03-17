@@ -1,0 +1,200 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage{fancyhdr}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{xcolor}
+
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\textheight 9.3in
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{3.60004pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that the generated PDF is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\def\customColor{000000} 
+\def\customColorSub{000000}
+
+\newcommand
+{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r@{\hspace{-0.1in}}}
+    \textbf{\color[HTML]{\customColor} #1} & \textbf{\color[HTML]{\customColor} #2} \\
+    \textit{\small\color[HTML]{\customColorSub}#3} & \textit{\small\color[HTML]{\customColorSub} #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\color[HTML]{\customColor}\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-0pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r@{\hspace{-0.1in}}}
+      \small\color[HTML]{\customColor}#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-1pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.1in, rightmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+\color[HTML]{\customColor}
+    \textbf{\huge \scshape Vikram Sandigaru } \\ \vspace{3pt} 
+    {\fontsize{10pt}{12pt}\selectfont +1 (657) 334-5863  $|$ \href{mailto:sandigaru.v@northeastern.edu}{\underline{sandigaru.v@northeastern.edu}} $|$ 
+    \href{https://www.linkedin.com/in/vikram-reddy-sandigaru/}{\underline{Linkedin}} $|$ 
+    \href{https://github.com/vikram17036}{\underline{GitHub}}}
+\end{center}
+
+\vspace{-10pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Northeastern University}{Boston, MA}
+{Master of Science in Information Systems; \textbf{GPA: 3.63/4.00}}{Sep 2023 - Aug 2025}
+\resumeItemListStart
+\resumeItem{\textbf{Relevant Courses:} Applications of AI, Machine Learning, Natural Language Processing, Data Management and Big Data}
+\resumeItemListEnd
+
+\resumeSubheading
+{Jawaharlal Nehru Technological University}{Hyderabad, India}
+{Bachelor of Technology in Mechanical Engineering}{Aug 2017 - Apr 2021}
+\resumeItemListStart
+\resumeItem{\textbf{Relevant Courses:} Statistics, Data Structures \& Algorithms}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\textbf{AI Engineer}}{Jan 2024 -- May 2025 (Expected)}
+{\textbf{FounderWay.ai}}{Boston, MA}
+\resumeItemListStart
+\resumeItem{\textbf{Enhanced} LangFlow applications through \textbf{JSON-based} Flask architecture and \textbf{FastAPI} integration, resulting in \textbf{40\% reduced latency} and \textbf{enhanced system performance} for users while \textbf{streamlining development cycles} by \textbf{30\%}.}
+\resumeItem{\textbf{Executed} robust debugging solutions for critical LangFlow issues and memory management, leading to \textbf{20\% improved runtime reliability} and \textbf{stabilized production workflows} across the platform.}
+\resumeItem{\textbf{Designed} end-to-end AI infrastructure using \textbf{Docker}/\textbf{Azure}\textbf{ CI/CD pipelines}, \textbf{Pinecone} vector databases, and \textbf{OpenAI} embeddings, reducing deployment time by \textbf{30\%} and achieving \textbf{40\% faster semantic search capabilities}.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Data Engineer}}{Oct 2022 -- Jul 2023}
+{\textbf{LTI Mindtree}}{Hyderabad, India}
+\resumeItemListStart
+\resumeItem{\textbf{Increased processing efficiency} by \textbf{40\%} by building scalable data pipelines for financial datasets using \textbf{Apache Spark}.}
+\resumeItem{\textbf{Minimized downtime} and \textbf{reduced errors} by \textbf{25\%} through automated \textbf{ETL workflows} for large-scale dataset migration.}
+\resumeItem{\textbf{Improved query performance} by \textbf{30\%} by connecting \textbf{Snowflake} with \textbf{Azure Data Factory} to streamline workflows.}
+\resumeItem{\textbf{Significantly improved healthcare data analysis accuracy} by \textbf{30\%} through ETL pipeline design using \textbf{Apache Spark}.}
+\resumeItem{\textbf{Accelerated decision-making} by \textbf{25\%} with innovative visualization of patient metrics in \textbf{Power BI dashboards}.}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{{\textbf{Advanced AI Voice Assistant} $|$ \textbf{OpenAI Whisper, GPT-3.5, FastAPI, Docker}}}{}
+\resumeItemListStart
+\resumeItem{Engineered a \textbf{real-time conversational AI} using \textbf{OpenAI Whisper} and \textbf{GPT-3.5}, achieving \textbf{95\% speech recognition accuracy} across multiple accents and environments}
+\resumeItem{Deployed asynchronous \textbf{FastAPI} endpoints with \textbf{Docker containerization}, maintaining \textbf{200ms latency} for \textbf{10,000 users}}
+\resumeItem{Linked custom\textbf{ TTS }pipeline with emotion recognition, improving user engagement by \textbf{40\%} over traditional voice assistants}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{{\textbf{Intelligent Career Advisory System} $|$ \textbf{Pinecone, OpenAI, Azure}}}{}
+\resumeItemListStart
+\resumeItem{Architected a RAG-based chatbot using \textbf{Pinecone vector database} and \textbf{OpenAI embeddings}, processing over \textbf{100K+ career documents} with \textbf{40\% faster query response}}
+\resumeItem{Operationalized multi-tenant architecture with namespace isolation, enabling personalized insights for \textbf{500 concurrent users}}
+\resumeItem{Launched on \textbf{Azure} using \textbf{CI/CD pipelines}, achieving \textbf{99.9\% uptime} and \textbf{25\% improved decision-making efficiency}}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{{\textbf{Healthcare ML Analytics Platform} $|$ \textbf{Random Forest, XGBoost}}}{}
+\resumeItemListStart
+\resumeItem{Created an ensemble \textbf{ML model} combining \textbf{Random Forest} and \textbf{XGBoost} for disease prediction, achieving \textbf{93\% accuracy} on clinical datasets}
+\resumeItem{Applied \textbf{automated data preprocessing pipeline}, improving data quality by \textbf{40\%} through advanced \textbf{feature engineering}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\vspace{2pt}
+\small
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=1.2pt]
+    \item \textbf{Programming \& Data Science:} Python, Bash/Shell Scripting
+    \item \textbf{Generative AI \& NLP:} OpenAI GPT-3.5, OpenAI Whisper, FastAPI, Docker
+    \item \textbf{Machine Learning:} TensorFlow, PyTorch, Scikit-Learn, XGBoost, Random Forest, Feature Engineering, MLOps
+    \item \textbf{Cloud \& Data Engineering:} AWS (S3, Azure CI/CD pipelines), Azure (Data Factory), Snowflake, Apache Spark, ETL
+    \item \textbf{DevOps \& Deployment:} Docker, Kubernetes, Azure Pipelines, GitHub Actions
+    \item \textbf{Data Visualization:} Power BI, Tableau
+\end{itemize}
+
+
+\end{document}
